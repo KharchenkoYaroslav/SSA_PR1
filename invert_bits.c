@@ -4,8 +4,9 @@
 uint8_t invertBits(uint8_t x, int start, int end){
 	if(start < 0|| start > 7 || end < 0||end>7||start>end){
 		printf("U idiot");
+		return x;
 	}
-
+	
 
 	for (int i = start; i <= end; i++) {
 		x ^= (1 << i);
